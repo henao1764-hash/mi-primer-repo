@@ -1,0 +1,15 @@
+pipeline {
+  agent any
+  stages {
+    stage('CI') {
+      steps {
+        echo 'CI: ejecutando desde GitHub'
+      }
+    }
+    stage('CD') {
+      steps {
+        echo 'CD: simulando despliegue'
+      }
+    }
+  }
+}
