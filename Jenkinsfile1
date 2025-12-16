@@ -1,0 +1,11 @@
+pipeline {
+  agent any
+  stages {
+    stage('CI') {
+      steps { echo 'CI desde GitHub OK' }
+    }
+    stage('CD') {
+      steps { echo 'CD (simulado) OK' }
+    }
+  }
+}
